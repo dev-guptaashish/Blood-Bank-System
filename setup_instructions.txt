@@ -1,0 +1,29 @@
+BLOOD BANK SYSTEM - PHP Setup Instructions
+
+1. INSTALL XAMPP (if not done):
+   - Download from apachefriends.org
+   - Install, start Apache + MySQL
+
+2. CREATE DATABASE:
+   - Open phpMyAdmin: http://localhost/phpmyadmin
+   - Import database.sql OR run SQL tab:
+     ```
+     SOURCE c:/Users/91920/OneDrive/Desktop/Blood Bank System/database.sql
+     ```
+   - Default login: admin / password
+
+3. TEST:
+   - Open: http://localhost/Blood%20Bank%20System/login.php
+   - Login: admin / password
+   - Navigate to Stock Detail - see dynamic table from DB!
+
+4. NEXT STEPS (convert remaining HTML):
+   - Rename .html to .php
+   - Add <?php require 'config.php'; requireLogin(); ?> at top
+   - Replace demo JS forms with PHP CRUD using $pdo
+
+Files converted: config.php, login.php, stock_detail.php
+Remaining: home_full.php, Donor.php, etc. (same pattern)
+
+Serve from htdocs: Copy folder to C:\xampp\htdocs\
+
